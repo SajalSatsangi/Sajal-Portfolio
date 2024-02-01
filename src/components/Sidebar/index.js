@@ -15,39 +15,39 @@ const Sidebar = () => (
         </Link>
         <nav>
             <NavLink exact="true" activelassname="active" to="/">
-                <FontAwesomeIcon icon={faHome} color='#fff' />
+                <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
             </NavLink>
             <NavLink exact="true" activelassname="active" className="about-link" to="/about">
-                <FontAwesomeIcon icon={faUser} color='#fff' />
+                <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
             </NavLink>
             <NavLink exact="true" activelassname="active" className="skill-link" to="/skill">
-                <FontAwesomeIcon icon={faPenNib} color='#fff' />
+                <FontAwesomeIcon icon={faPenNib} color='#4d4d4e' />
             </NavLink>
             <NavLink exact="true" activelassname="active" className="education-link" to="/education">
-                <FontAwesomeIcon icon={faGraduationCap} color='#fff' />
+                <FontAwesomeIcon icon={faGraduationCap} color='#4d4d4e' />
             </NavLink>
             <NavLink exact="true" activelassname="active" className="experience-link" to="/experience">
-                <FontAwesomeIcon icon={faChartSimple} color='#fff' />
+                <FontAwesomeIcon icon={faChartSimple} color='#4d4d4e' />
             </NavLink>
             <NavLink exact="true" activelassname="active" className="projects-link" to="/projects">
-                <FontAwesomeIcon icon={faDiagramProject} color='#fff' />
+                <FontAwesomeIcon icon={faDiagramProject} color='#4d4d4e' />
             </NavLink>
             <NavLink exact="true" activelassname="active" className="resume-link" to="/resume">
-                <FontAwesomeIcon icon={faNewspaper} color='#fff' />
+                <FontAwesomeIcon icon={faNewspaper} color='#4d4d4e' />
             </NavLink>
             <NavLink exact="true" activelassname="active" className="contact-link" to="/contact">
-                <FontAwesomeIcon icon={faEnvelope} color='#fff' />
+                <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
             </NavLink>
         </nav>
         <ul>
             <li>
                 <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/sajal-satsangi-547802204/'>
-                    <FontAwesomeIcon icon={faLinkedin} color='#fff' />
+                    <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
                 </a>
             </li>
             <li>
                 <a target="_blank" rel='noreferrer' href='https://github.com/SajalSatsangi'>
-                    <FontAwesomeIcon icon={faGithub} color='#fff' />
+                    <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
                 </a>
             </li>
             <li>
