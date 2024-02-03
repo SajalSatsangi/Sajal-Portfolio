@@ -6,6 +6,7 @@ import Leetcode from '../../assets/images/leetcode.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChartSimple, faDiagramProject, faEnvelope, faGraduationCap, faHome, faNewspaper, faPenNib, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import DarkMode from '../Layout/DarkMode/DarkMode'
 
 const Sidebar = () => (
     <div id='nav-bar' className='nav-bar-dark'>
@@ -52,7 +53,7 @@ const Sidebar = () => (
             </li>
             <li>
                 <a target="_blank" rel='noreferrer' href='https://leetcode.com/Sajal_Satsangi/'>
-                    <img src={Leetcode} alt="leetcode"/>
+                    <img src={Leetcode} alt="leetcode" />
                 </a>
             </li>
         </ul>

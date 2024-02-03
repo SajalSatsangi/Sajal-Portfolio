@@ -223,14 +223,6 @@ iframe {
   border-style: solid;
 }
 
-.dark-map {
-  filter: invert(85%) hue-rotate(180deg);
-}
-
-.dark-map-light {
-  filter: invert(25%) hue-rotate(180deg);
-}
-
 @media screen and (max-width: 1200px) {
   .map-wrap {
     float: none;

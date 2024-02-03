@@ -30,45 +30,22 @@ const DarkMode = () => {
     useLayoutEffect(() => {
         document.body.className = theme;
 
-        const homePageElement = document.getElementById("homePage");
-        if (homePageElement) {
-            homePageElement.className = pageTheme;
-        }
+        const setPageTheme = (id, theme) => {
+            const element = document.getElementById(id);
+            if (element) {
+                element.className = theme;
+            }
+        };
 
-        const sidebarElement = document.getElementById("nav-bar");
-        if (sidebarElement) {
-            sidebarElement.className = sidebarTheme;
-        }
+        setPageTheme("homePage", pageTheme);
+        setPageTheme("nav-bar", sidebarTheme);
+        setPageTheme("about-hover", aboutTheme);
+        setPageTheme("contact-hover", contactTheme);
+        setPageTheme("dark-cube", cubeTheme);
+        setPageTheme("iframe", iframeTheme);
+        setPageTheme("contact-form", contactFormTheme);
+        setPageTheme("infomap", infoMapTheme);
 
-        const aboutElement = document.getElementById("about-hover");
-        if (aboutElement) {
-            aboutElement.className = aboutTheme;
-        }
-
-        const contactElement = document.getElementById("contact-hover");
-        if (contactElement) {
-            contactElement.className = contactTheme;
-        }
-
-        const cubeElement = document.getElementById("dark-cube");
-        if (cubeElement) {
-            cubeElement.className = cubeTheme;
-        }
-
-        const iframeElement = document.getElementById("iframe");
-        if (iframeElement) {
-            iframeElement.className = iframeTheme;
-        }
-
-        const contactFormElement = document.getElementById("contact-form");
-        if (contactFormElement) {
-            contactFormElement.className = contactFormTheme;
-        }
-
-        const infoMapElement = document.getElementById("infomap");
-        if (infoMapElement) {
-            infoMapElement.className = infoMapTheme;
-        }
     }, [theme, pageTheme, sidebarTheme, aboutTheme, contactTheme, cubeTheme, iframeTheme, contactFormTheme, infoMapTheme]);
 
     return (
