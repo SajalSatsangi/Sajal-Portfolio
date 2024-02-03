@@ -26,7 +26,7 @@ const DarkMode = () => {
                 type='checkbox'
                 id='lightmode-toggle'
             />
-            <label className='light_mode_label' for='lightmode-toggle'>
+            <label onClick={toggleTheme} className='light_mode_label' for='lightmode-toggle'>
                 <Moon />
                 <Sun />
             </label>
