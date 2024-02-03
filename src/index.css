@@ -5,12 +5,20 @@ html {
 body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', sans-serif;
-  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #212121;
   overflow: hidden;
   display: block;
+}
+
+.dark-theme {
+  background: #212121;
+  color: #fff;
+}
+
+.light-theme {
+  background: #aaa8a8;
+  color: #000000 !important;
 }
 
 .dashboard {

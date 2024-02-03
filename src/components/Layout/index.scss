@@ -1,3 +1,7 @@
+*{
+  cursor: none;
+}
+
 .page {
   width: 100%;
   height: 100%;
@@ -10,7 +14,7 @@
 }
 
 .tags {
-  color: #FABD48;
+  color: #b15f29;
   opacity: 0.6;
   position: absolute;
   bottom: 0;
@@ -45,7 +49,7 @@
     h1 {
       font-size: 53px;
       font-family: 'Coolvetica';
-      color: #ffd700;
+      color: #d47331;
       font-weight: 400;
       margin-top: 0;
       position: relative;
@@ -55,7 +59,7 @@
       &:before {
         content: '<h1>';
         font-family: 'La Belle Aurore', cursive;
-        color: #ffd700;
+        color: #d47331;
         font-size: 18px;
         position: absolute;
         margin-top: -10px;
@@ -67,7 +71,7 @@
       &:after {
         content: '<h1/>';
         font-family: 'La Belle Aurore', cursive;
-        color: #ffd700;
+        color: #d47331;
         font-size: 18px;
         line-height: 18px;
         position: absolute;
@@ -160,4 +164,15 @@
     height: 0%;
     overflow: visible;
   }
+}
+
+.cursor{
+  background-color: red;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
 }

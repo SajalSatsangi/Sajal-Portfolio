@@ -1,0 +1,78 @@
+.light_mode {
+    position: absolute;
+    margin-top: 0px;
+    right: 15px;
+}
+
+.light_mode_label {
+    width: 65px;
+    height: 30px;
+    position: relative;
+    display: block;
+    background: #242424;  /* Dark theme background color */
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(196, 193, 193, 0.4),
+        inset 0px -5px 15px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.light_mode_label:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: linear-gradient(180deg, #777, #3a3a3a);  /* Dark theme gradient colors */
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.light_mode_input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.light_mode_input:checked + .light_mode_label {
+    background: #d5d4d4;  /* Light theme background color */
+}
+
+.light_mode_input:checked + .light_mode_label:after {
+    left: 62px;  /* Light theme position */
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #D47331, #965e09);  /* Light theme gradient colors */
+}
+
+.light_mode_label:active:after {
+    width: 30px;
+}
+
+.light_mode_label svg {
+    position: absolute;
+    width: 20px;
+    top: 5px;
+    z-index: 100;
+}
+
+.light_mode_label svg.sun {
+    left: 40px;  /* Dark theme position */
+    fill: #7e7e7e;
+    transition: 0.3s;
+}
+
+.light_mode_label svg.moon {
+    left: 5px;  /* Dark theme position */
+    fill: #fff;
+    transition: 0.3s;
+}
+
+.light_mode_input:checked + .light_mode_label svg.sun {
+    fill: #fff;
+}
+
+.light_mode_input:checked + .light_mode_label svg.moon {
+    fill: #7e7e7e;
+}
