@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react'
 import {
-    faAngular,
     faCss3,
     faFigma,
-    faGitAlt,
     faHtml5,
     faJava,
     faJsSquare,
-    faPython,
     faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
