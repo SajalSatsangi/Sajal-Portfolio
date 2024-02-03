@@ -8,7 +8,7 @@ import { faChartSimple, faDiagramProject, faEnvelope, faGraduationCap, faHome, f
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
-    <div className='nav-bar'>
+    <div id='nav-bar' className='nav-bar-dark'>
         <Link className='logo' to='/'>
             <img src={LogoS} alt="logo" />
             <img src={LogoSubtitle} alt="sajalsatsangi" />

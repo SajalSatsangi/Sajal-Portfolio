@@ -73,6 +73,81 @@
   }
 }
 
+.contact-form-light {
+  width: 100%;
+  margin-top: 20px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      overflow: hidden;
+      display: block;
+      clear: both;
+      position: relative;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    width: 100%;
+    border: 0;
+    background: #c7c7c7;
+    height: 50px;
+    font-size: 16px;
+    color: #565656;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    border: 0;
+    background: #c7c7c7;
+    height: 50px;
+    font-size: 16px;
+    color: #565656;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+  }
+
+  .flat-button {
+    color: #d47331;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #d47331;
+    float: left;
+    border-radius: 4px;
+    background: 0 0;
+    text-transform: uppercase;
+    float: right;
+    text-align: center;
+    margin-right: 10px;
+  }
+}
+
 .map-wrap {
   background: rgba(8, 253, 216, 0.1);
   float: right;
@@ -94,7 +169,7 @@
   position: absolute;
   background: #000;
   top: -40px;
-  right: 32%;
+  right: 32.11%;
   z-index: 999999;
   width: 267px;
   padding: 20px;
@@ -115,12 +190,45 @@
   }
 }
 
+.info-map-light {
+  position: absolute;
+  background: #838282;
+  top: -40px;
+  right: 32.11%;
+  z-index: 999999;
+  width: 267px;
+  padding: 20px;
+  color: #000;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+
+  span {
+    font-size: 16px;
+
+    span {
+      color: #d47331;
+    }
+  }
+}
+
 iframe {
-  width: 99%;
+  width: 100%;
   border: 5px;
-  height: 95.5%;
+  height: 100% !important;
   border-color: rgba(8, 253, 216, 0.1);
   border-style: solid;
+}
+
+.dark-map {
+  filter: invert(85%) hue-rotate(180deg);
+}
+
+.dark-map-light {
+  filter: invert(25%) hue-rotate(180deg);
 }
 
 @media screen and (max-width: 1200px) {

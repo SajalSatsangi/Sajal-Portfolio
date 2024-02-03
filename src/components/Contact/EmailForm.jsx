@@ -42,7 +42,7 @@ const EmailForm = () => {
     };
 
     return (
-        <div className="contact-form">
+        <div id='contact-form' className="contact-form">
             <form onSubmit={handleSubmit} id="contact-form">
                 <ul>
                     <li className="half">

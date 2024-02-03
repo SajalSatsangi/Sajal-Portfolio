@@ -30,8 +30,8 @@ const About = () => {
 
     return (
         <>
-            <div className="container about-page">
-                <div className="text-zone">
+            <div id='about-hover' className="container about-page">
+                <div className="text-zone dark-hover">
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
@@ -50,7 +50,7 @@ const About = () => {
                 </div>
 
                 <div className="stage-cube-cont">
-                    <div className="cubespinner">
+                    <div id='dark-cube' className="cubespinner">
                         <div className="face1">
                             <FontAwesomeIcon icon={faFigma} color="#0ACF83" />
                         </div>

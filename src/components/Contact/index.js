@@ -18,7 +18,7 @@ const Contact = () => {
 
     return (
         <>
-            <div className='container contact-page'>
+            <div id='contact-hover' className='container contact-page'>
                 <div className='text-zone'>
                     <h1>
                         <AnimatedLetters
@@ -34,7 +34,7 @@ const Contact = () => {
                     </p>
                     <EmailForm />
                 </div>
-                <div className="info-map">
+                <div id='infomap' className="info-map">
                     Sajal Satsangi,
                     <br />
                     Agra,
@@ -47,10 +47,10 @@ const Contact = () => {
                     <br />
                     <span>sajalsatsangi2004@gmail.com</span>
                 </div>
-                <div className="map-wrap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3547.812679400646!2d77.99636497596164!3d27.225030376462374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDEzJzMwLjEiTiA3N8KwNTknNTYuMiJF!5e0!3m2!1sen!2sin!4v1706844709225!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
             </div >
+            <div className="map-wrap">
+                <iframe id='iframe' className='dark-map' src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3547.812679400646!2d77.99636497596164!3d27.225030376462374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDEzJzMwLjEiTiA3N8KwNTknNTYuMiJF!5e0!3m2!1sen!2sin!4v1706844709225!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             <Loader type='pacman' />
         </>
     )
