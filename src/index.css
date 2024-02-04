@@ -151,7 +151,7 @@ body {
   .info-map {
     position: absolute;
     background: #000;
-    top: -40px;
+    top: -20px;
     right: 32.11%;
     z-index: 999999;
     width: 267px;

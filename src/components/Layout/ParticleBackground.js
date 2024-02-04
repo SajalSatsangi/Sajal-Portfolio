@@ -1,6 +1,7 @@
 import React from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
+import wordpress from "../../assets/wordpress.svg";
 
 const ParticlesBackground = () => {
     const [init, setInit] = React.useState(false);
@@ -48,10 +49,10 @@ const ParticlesBackground = () => {
             },
             particles: {
                 color: {
-                    value: "#ffffff",
+                    value: "#116711",
                 },
                 links: {
-                    color: "#ffffff",
+                    color: "#116711",
                     distance: 150,
                     enable: true,
                     opacity: 0.5,
