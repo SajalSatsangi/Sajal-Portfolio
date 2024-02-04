@@ -3,6 +3,7 @@ import gsap from 'gsap-trial'
 import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 import LogoS from '../../../assets/images/logo-s.png'
 import './index.scss'
+import ParticlesBackground from '../../Layout/ParticleBackground'
 
 const Logo = () => {
   const bgRef = useRef()
@@ -38,6 +39,8 @@ const Logo = () => {
 
   return (
     <div className="logo-container" ref={bgRef}>
+      <ParticlesBackground />
+
       <img
         className="solid-logo"
         ref={solidLogoRef}

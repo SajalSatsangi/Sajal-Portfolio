@@ -3,6 +3,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import EmailForm from './EmailForm'
+import ParticlesBackground from "../Layout/ParticleBackground";
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -19,6 +20,7 @@ const Contact = () => {
     return (
         <>
             <div id='contact-hover' className='container contact-page'>
+                <ParticlesBackground />
                 <div className='text-zone'>
                     <h1>
                         <AnimatedLetters

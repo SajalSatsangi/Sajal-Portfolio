@@ -11,6 +11,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
+import ParticlesBackground from "../Layout/ParticleBackground";
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -23,11 +24,13 @@ const About = () => {
             clearTimeout(timeoutId);
         };
     }, []);
-    
+
 
     return (
         <>
             <div id='about-hover' className="container about-page">
+                <ParticlesBackground />
+
                 <div className="text-zone dark-hover">
                     <h1>
                         <AnimatedLetters

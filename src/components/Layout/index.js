@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import './index.scss';
 import { useEffect, useState } from 'react';
 import DarkMode from "./DarkMode/DarkMode";
-import ParticlesBackground from "./ParticleBackground"; // Import the Particle.js component
 
 const Layout = () => {
   const [mousePosition, setMousePosition] = useState({
@@ -35,8 +34,8 @@ const Layout = () => {
   };
 
   return (
+    <>
     <div className="App">
-      <ParticlesBackground />
 
       <DarkMode />
       <Sidebar />
@@ -57,6 +56,7 @@ const Layout = () => {
         animate= "default"
       />
     </div>
+    </>
   );
 };
 

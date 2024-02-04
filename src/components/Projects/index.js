@@ -1,9 +1,13 @@
 import Loader from "react-loaders"
+import ParticlesBackground from "../Layout/ParticleBackground";
 
 const Projects = () => {
-    
+
     return (
-        <Loader type="pacman" />
+        <>
+            <ParticlesBackground />
+            <Loader type="pacman" />
+        </>
     )
 }
 
