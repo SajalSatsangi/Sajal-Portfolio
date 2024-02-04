@@ -1,31 +1,30 @@
-import { Outlet } from 'react-router-dom'
-import Sidebar from '../Sidebar/'
-import { motion } from 'framer-motion'
-import './index.scss'
-import { useEffect, useState } from 'react'
-import DarkMode from "./DarkMode/DarkMode"
+import { Outlet } from 'react-router-dom';
+import Sidebar from '../Sidebar/';
+import { motion } from 'framer-motion';
+import './index.scss';
+import { useEffect, useState } from 'react';
+import DarkMode from "./DarkMode/DarkMode";
+import ParticlesBackground from "./ParticleBackground"; // Import the Particle.js component
 
 const Layout = () => {
-
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0
   });
-  console.log(mousePosition);
 
   useEffect(() => {
     const mouseMove = e => {
       setMousePosition({
         x: e.clientX,
         y: e.clientY
-      })
-    }
+      });
+    };
 
-    window.addEventListener("mousemove", mouseMove); 
+    window.addEventListener("mousemove", mouseMove);
 
     return () => {
       window.removeEventListener("mousemove", mouseMove);
-    }
+    };
   }, []);
 
   const variants = {
@@ -33,11 +32,13 @@ const Layout = () => {
       x: mousePosition.x,
       y: mousePosition.y
     }
-  }
+  };
 
   return (
     <div className="App">
-      <DarkMode/>
+      <ParticlesBackground />
+
+      <DarkMode />
       <Sidebar />
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
@@ -56,7 +57,7 @@ const Layout = () => {
         animate= "default"
       />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
