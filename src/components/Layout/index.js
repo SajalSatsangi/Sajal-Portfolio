@@ -1,8 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../Sidebar/';
-import { motion } from 'framer-motion';
 import './index.scss';
-import { useEffect, useState } from 'react';
 import DarkMode from "./DarkMode/DarkMode";
 import MouseParticles from 'react-mouse-particles'
 

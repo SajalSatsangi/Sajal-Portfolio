@@ -1,3 +1,7 @@
+#hover-exp::-webkit-scrollbar {
+    width: 0 !important;
+}
+
 h3 {
     font-size: large !important;
 }
