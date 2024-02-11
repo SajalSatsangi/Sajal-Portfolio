@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import Logo from './Logo'
+import Hello from '../../assets/Hello.gif'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -43,10 +44,11 @@ const Home = () => {
                 <h1>
                     <span className={letterClass}>H</span>
                     <span className={`${letterClass} _12`}>i,</span>
+                    <img className='Hello' src={Hello} alt='developer' />
                     <br/>
                     <span className={`${letterClass} _13`}>I</span>
                     <span className={`${letterClass} _14`}>'m</span>
-                    <img src={LogoTitle} alt='developer' />
+                    <img className='LogoTitle' src={LogoTitle} alt='developer' />
                     <AnimatedLetters letterClass={letterClass}
                     strArray={nameArray}
                     idx={15} />
