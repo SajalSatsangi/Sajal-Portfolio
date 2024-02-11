@@ -1,7 +1,6 @@
 import React from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
-import wordpress from "../../assets/wordpress.svg";
 
 const ParticlesBackground = () => {
     const [init, setInit] = React.useState(false);
