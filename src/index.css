@@ -9,6 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
   display: block;
+  cursor:url('assets/images/cursor2.png'), pointer;
 }
 
 .dark-theme {

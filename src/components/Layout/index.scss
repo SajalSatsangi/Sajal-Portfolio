@@ -1,5 +1,5 @@
 * {
-  cursor: none;
+  cursor:url('../../assets/images/cursor2.png'), pointer;
 }
 
 .page {
@@ -394,13 +394,13 @@
   }
 }
 
-.cursor {
-  background-color: red;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99999;
-}
+// .cursor {
+//   background-color: red;
+//   height: 15px;
+//   width: 15px;
+//   border-radius: 50%;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 99999;
+// }

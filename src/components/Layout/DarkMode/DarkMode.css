@@ -14,7 +14,6 @@
     border-radius: 200px;
     box-shadow: inset 0px 5px 15px rgba(196, 193, 193, 0.4),
         inset 0px -5px 15px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
     transition: 0.3s;
 }
 
