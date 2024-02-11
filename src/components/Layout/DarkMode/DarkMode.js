@@ -13,6 +13,7 @@ const DarkMode = () => {
     const [iframeTheme, setIframeTheme] = useState("dark-map");
     const [contactFormTheme, setContactFormTheme] = useState("contact-form");
     const [infoMapTheme, setInfoMapTheme] = useState("info-map");
+    const [hoverExpTheme, setHoverExpTheme] = useState("dark-hover-exp");
 
     const toggleTheme = () => {
         const newTheme = theme === "light-theme" ? "dark-theme" : "light-theme";
@@ -25,6 +26,7 @@ const DarkMode = () => {
         setIframeTheme(newTheme === "light-theme" ? "dark-map-light" : "dark-map");
         setContactFormTheme(newTheme === "light-theme" ? "contact-form-light" : "contact-form");
         setInfoMapTheme(newTheme === "light-theme" ? "info-map-light" : "info-map");
+        setHoverExpTheme(newTheme === "light-theme" ? "light-hover-exp" : "dark-hover-exp");
     };
 
     useLayoutEffect(() => {
@@ -45,8 +47,9 @@ const DarkMode = () => {
         setPageTheme("iframe", iframeTheme);
         setPageTheme("contact-form", contactFormTheme);
         setPageTheme("infomap", infoMapTheme);
+        setPageTheme("hover-exp", hoverExpTheme);
 
-    }, [theme, pageTheme, sidebarTheme, aboutTheme, contactTheme, cubeTheme, iframeTheme, contactFormTheme, infoMapTheme]);
+    }, [theme, pageTheme, sidebarTheme, aboutTheme, contactTheme, cubeTheme, iframeTheme, contactFormTheme, infoMapTheme, hoverExpTheme]);
 
     return (
         <div className='light_mode'>
