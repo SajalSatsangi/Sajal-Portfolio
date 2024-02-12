@@ -10,7 +10,8 @@ const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['a', 'j', 'a', 'l'];
     const surnameArray = ['a', 't', 's', 'a', 'n', 'g', 'i'];
-    const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', ' ', ' ', '&'];
+    const jobArray3 = ['U', 'I', ' ', 'd', 'e', 's', 'i', 'g', 'n', 'e', 'r', ' ', ' ', '&'];
+    const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', ' ', ','];
     const jobArray2 = ['A', 'n', 'd', 'r', 'o', 'i', 'd', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.'];
 
     useEffect(() => {
@@ -47,8 +48,12 @@ const Home = () => {
                         idx={26} />
                     <br />
                     <AnimatedLetters letterClass={letterClass}
-                        strArray={jobArray2}
+                        strArray={jobArray3}
                         idx={41} />
+                    <br />
+                    <AnimatedLetters letterClass={letterClass}
+                        strArray={jobArray2}
+                        idx={55} />
                 </h1>
                 <h2>Frontened Developer/ UI Designer/ React-Native Developer</h2>
                 <Link to='/contact' className='flat-button'>CONTACT ME</Link>
