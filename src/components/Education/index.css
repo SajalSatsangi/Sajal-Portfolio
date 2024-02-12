@@ -1,0 +1,167 @@
+#hover-exp::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+h3 {
+    font-size: large !important;
+}
+
+h5{
+    font-size: larger !important;
+}
+
+.light-hover-exp {
+    h1 {
+        text-align: center;
+        font-size: 70px;
+        font-family: 'Coolvetica';
+        color: #d47331;
+        font-weight: 400;
+        margin-left: 90px;
+    }
+
+    .text-animate-hover {
+        &:hover {
+            color: #000;
+        }
+    }
+
+    h3 {
+        padding-top: 0.25em;
+    }
+
+    .vertical-timeline-element-content {
+        box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+            0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+        padding: 2em 3em !important;
+        background-color: #a3a3a3 !important;
+    }
+
+    .vertical-timeline::before {
+        background: #a3a3a3 !important;
+    }
+
+    .vertical-timeline-element-content-arrow {
+        border-right: 7px solid #a3a3a3 !important;
+    }
+
+    .vertical-timeline-element-icon {
+        box-shadow: 0 0 0 4px #a3a3a3, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05) !important;
+    }
+
+    .date {
+        color: rgb(74, 95, 97);
+        font-size: 18px !important;
+        margin-top: 0px !important;
+    }
+
+    #description {
+        margin: 1.5em 0 2em 0;
+    }
+
+    .button {
+        text-decoration: none;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        color: black !important;
+    }
+
+    .workButton {
+        background-color: #06d6a0;
+    }
+
+    .workButton:hover {
+        background-color: #0ac593;
+    }
+
+    .schoolButton {
+        background-color: #f9c74f;
+    }
+
+    .schoolButton:hover {
+        background-color: #f3bc3c;
+    }
+}
+
+.dark-hover-exp {
+
+    h1 {
+        text-align: center;
+        font-size: 70px;
+        font-family: 'Coolvetica';
+        color: #d47331;
+        font-weight: 400;
+        margin-left: 90px;
+    }
+
+    .text-animate-hover {
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    h3 {
+        padding-top: 0.25em;
+    }
+
+    .vertical-timeline-element-content {
+        box-shadow: 0 0.25em 0.5em 0 rgba(38, 38, 38, 0.218),
+            0 0.4em 1.25em 0 rgba(38, 38, 38, 0.118) !important;
+        padding: 2em 3em !important;
+        background-color: #181818 !important;
+    }
+
+    .vertical-timeline::before {
+        background: #181818 !important;
+    }
+
+    .vertical-timeline-element-content-arrow {
+        border-right: 7px solid #181818 !important;
+    }
+
+    .vertical-timeline-element-icon {
+        box-shadow: 0 0 0 4px #181818, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05) !important;
+    }
+
+    .date {
+        color: rgb(201, 251, 255) !important;
+        font-size: 18px !important;
+        margin-top: 0px !important;
+    }
+
+    #description {
+        margin: 1.5em 0 2em 0;
+    }
+
+    .button {
+        text-decoration: none;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        color: black !important;
+    }
+
+    .workButton {
+        background-color: #06d6a0;
+    }
+
+    .workButton:hover {
+        background-color: #0ac593;
+    }
+
+    .schoolButton {
+        background-color: #f9c74f;
+    }
+
+    .schoolButton:hover {
+        background-color: #f3bc3c;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .vertical-timeline-element-date {
+        display: block !important;
+        float: none !important;
+        color: rgb(44, 44, 44);
+        margin-top: 1.5em;
+    }
+}
