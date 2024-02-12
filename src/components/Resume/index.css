@@ -2,9 +2,7 @@
     height: 600px;
     width: 500px;
     margin-top: -40px;
-    margin-left: 475px;
-    border: 10px solid transparent;
-    border-image: url('../../assets/images/border.jpg') 30 stretch;
+    margin-left: 500px;
     overflow: auto;
 }
 

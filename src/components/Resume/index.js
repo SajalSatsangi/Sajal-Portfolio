@@ -5,10 +5,10 @@ import AnimatedLetters from '../AnimatedLetters';
 import ParticlesBackground from "../Layout/ParticleBackground";
 import './index.css'
 import styled, { keyframes } from 'styled-components';
-import { rubberBand } from 'react-animations';
+import { fadeIn, fadeInUp, fadeInUpBig, rubberBand } from 'react-animations';
 import LogoImage from "../../assets/images/SajalResume.png";
 
-const bounceAnimation = keyframes`${rubberBand}`;
+const bounceAnimation = keyframes`${fadeIn}`;
 
 const BouncyDiv = styled.div`
   animation: 1s ${bounceAnimation};
