@@ -1,25 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
 
-.tagcloud {
-    display: inline-block;
-    margin-left: 28vw;
-    margin-top: -1.8vw;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.0625em;
-    font-size: 1.3em;
+
+.text-sphere {
+    .tagcloud {
+        display: inline-block;
+        margin-left: 28vw;
+        margin-top: -1.8vw;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.0625em;
+        font-size: 1.3em;
+
+        .tagcloud--item {
+            color: #00ffffff;
+            text-transform: uppercase;
+        }
+
+    }
 }
 
-/* Change color of each text in sphere on hover   */
-.tagcloud--item {
-    color: #00ffffff;
-    text-transform: uppercase;
+.text-sphere-light {
+    .tagcloud {
+        display: inline-block;
+        margin-left: 28vw;
+        margin-top: -1.8vw;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.0625em;
+        font-size: 1.3em;
+
+        .tagcloud--item {
+            color: rgb(0, 105, 105);
+            text-transform: uppercase;
+        }
+
+    }
 }
 
 .tagcloud--item:hover {
     color: #ff6347;
 }
 
-.skills{
+.skills {
     margin-left: 16vw;
 }

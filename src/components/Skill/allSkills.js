@@ -41,7 +41,7 @@ import { SassColor } from "sass";
 const AllSkills = () => {
     return (
         <>
-            <div className="main-social-2-container">
+            <div id="main-social" className="main-social-2-container">
                 <div className="main-social-2">
                     <br />
                     <br />
@@ -97,7 +97,7 @@ const AllSkills = () => {
                                     <span></span>
                                     <span></span>
                                     <span className="fab1 fa-linkedin">
-                                        <FontAwesomeIcon icon={faReact} size="lg" color="#fff" />
+                                        <FontAwesomeIcon className="light-icon" icon={faReact} size="lg" color="#fff" />
                                     </span>
                                 </div>
                             </a>
@@ -127,7 +127,7 @@ const AllSkills = () => {
                                     <span></span>
                                     <span></span>
                                     <span className="fab1 fa-linkedin">
-                                        <FontAwesomeIcon icon={faFigma} size="lg" color="#fff" />
+                                        <FontAwesomeIcon className="light-icon" icon={faFigma} size="lg" color="#fff" />
                                     </span>
                                 </div>
                             </a>
@@ -157,7 +157,7 @@ const AllSkills = () => {
                                     <span></span>
                                     <span></span>
                                     <span className="fab fa-linkedin">
-                                        <FontAwesomeIcon icon={faJs} size="lg" color="#fff" />
+                                        <FontAwesomeIcon className="light-icon" icon={faJs} size="lg" color="#fff" />
                                     </span>
                                 </div>
                             </a>
@@ -187,7 +187,7 @@ const AllSkills = () => {
                                     <span></span>
                                     <span></span>
                                     <span className="fab fa-linkedin">
-                                        <FontAwesomeIcon icon={faCss3} size="lg" color="#fff" />
+                                        <FontAwesomeIcon className="light-icon" icon={faCss3} size="lg" color="#fff" />
                                     </span>
                                 </div>
                             </a>
@@ -219,7 +219,7 @@ const AllSkills = () => {
                                     <span></span>
                                     <span></span>
                                     <span className="fab fa-linkedin">
-                                        <FontAwesomeIcon icon={faHtml5} size="lg" color="#fff" />
+                                        <FontAwesomeIcon className="light-icon" icon={faHtml5} size="lg" color="#fff" />
                                     </span>
                                 </div>
                             </a>
@@ -309,7 +309,7 @@ const AllSkills = () => {
                                     <span></span>
                                     <span></span>
                                     <span className="fab1 fa-linkedin">
-                                        <FontAwesomeIcon icon={faPython} size="lg" color="#fff" />
+                                        <FontAwesomeIcon className="light-icon" icon={faPython} size="lg" color="#fff" />
                                     </span>
                                 </div>
                             </a>
@@ -339,7 +339,7 @@ const AllSkills = () => {
                                     <span></span>
                                     <span></span>
                                     <span className="fab1 fa-linkedin">
-                                        <FontAwesomeIcon icon={faJava} size="lg" color="#fff" />
+                                        <FontAwesomeIcon className="light-icon" icon={faJava} size="lg" color="#fff" />
                                     </span>
                                 </div>
                             </a>
@@ -371,7 +371,7 @@ const AllSkills = () => {
                                     <span></span>
                                     <span></span>
                                     <span className="fab1 fa-linkedin">
-                                        <FontAwesomeIcon icon={faNodeJs} size="lg" color="#fff" />
+                                        <FontAwesomeIcon className="light-icon" icon={faNodeJs} size="lg" color="#fff" />
                                     </span>
                                 </div>
                             </a>
@@ -491,7 +491,7 @@ const AllSkills = () => {
                                     <span></span>
                                     <span></span>
                                     <span className="fab1 fa-linkedin">
-                                        <FontAwesomeIcon icon={faGitAlt} size="lg" color="#fff" />
+                                        <FontAwesomeIcon className="light-icon" icon={faGitAlt} size="lg" color="#fff" />
                                     </span>
                                 </div>
                             </a>
@@ -553,7 +553,7 @@ const AllSkills = () => {
                                     <span></span>
                                     <span></span>
                                     <span className="fab fa-linkedin">
-                                        <FontAwesomeIcon icon={faSass} size="lg" color="#fff" />
+                                        <FontAwesomeIcon className="light-icon" icon={faSass} size="lg" color="#fff" />
                                     </span>
                                 </div>
                             </a>
@@ -613,7 +613,7 @@ const AllSkills = () => {
                                     <span></span>
                                     <span></span>
                                     <span className="fab1 fa-linkedin">
-                                        <FontAwesomeIcon icon={faWordpress} size="lg" color="#fff" />
+                                        <FontAwesomeIcon className="light-icon" icon={faWordpress} size="lg" color="#fff" />
                                     </span>
                                 </div>
                             </a>
@@ -643,7 +643,7 @@ const AllSkills = () => {
                                     <span></span>
                                     <span></span>
                                     <span className="fab fa-linkedin">
-                                        <FontAwesomeIcon icon={faWix} size="lg" color="#fff" />
+                                        <FontAwesomeIcon className="light-icon" icon={faWix} size="lg" color="#fff" />
                                     </span>
                                 </div>
                             </a>

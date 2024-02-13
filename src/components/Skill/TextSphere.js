@@ -39,7 +39,7 @@ const TextShpere = () => {
   }, []);
 
   return (
-    <div className="text-sphere">
+    <div  id="textSphere" className="text-sphere">
       <span className="tagcloud"></span>
     </div>
   );

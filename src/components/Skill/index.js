@@ -1,12 +1,19 @@
-import Loader from "react-loaders"
+import Loader from "react-loaders";
 import ParticlesBackground from "../Layout/ParticleBackground";
 import AnimatedLetters from '../AnimatedLetters';
-import TextShpere from "./TextSphere";
+import TextSphere from "./TextSphere";
 import { useEffect, useState } from "react";
 import AllSkills from "./allSkills";
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
+
+const fadeInAnimation = keyframes`${fadeIn}`;
+
+const FadeDiv = styled.div`
+  animation: 8s ${fadeInAnimation};
+`;
 
 const Skill = () => {
-
   const [letterClass, setLetterClass] = useState('text-animate');
 
   useEffect(() => {
@@ -30,14 +37,16 @@ const Skill = () => {
           />
         </h1>
       </div>
-      <div className="skills">
-        <AllSkills />
-      </div>
-      <TextShpere />
-      <ParticlesBackground />
+      <FadeDiv>
+        <div className="skills">
+          <AllSkills />
+        </div>
+        <TextSphere />
+        <ParticlesBackground />
+      </FadeDiv>
       <Loader type="pacman" />
     </>
-  )
+  );
 }
 
-export default Skill
+export default Skill;
