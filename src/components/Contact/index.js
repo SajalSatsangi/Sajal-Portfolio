@@ -1,19 +1,40 @@
-import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import './index.scss'
-import EmailForm from './EmailForm'
+import React, { useEffect, useState } from 'react';
+import Loader from 'react-loaders';
+import AnimatedLetters from '../AnimatedLetters';
+import './index.scss';
+import EmailForm from './EmailForm';
 import ParticlesBackground from "../Layout/ParticleBackground";
+import SocialLink from './sociallinks';
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
+
+const fadeInAnimation = keyframes`${fadeIn}`;
+
+const FadeInDiv = styled.div`
+  animation: 1s ${fadeInAnimation};
+`;
 
 const Contact = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [letterClass, setLetterClass] = useState('text-animate');
+    const [showSocialLinks, setShowSocialLinks] = useState(false);
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             setLetterClass('text-animate-hover');
         }, 3000);
+
         return () => {
             clearTimeout(timeoutId);
+        };
+    }, []);
+
+    useEffect(() => {
+        const socialLinksTimeoutId = setTimeout(() => {
+            setShowSocialLinks(true);
+        }, 2600);
+
+        return () => {
+            clearTimeout(socialLinksTimeoutId);
         };
     }, []);
 
@@ -32,9 +53,14 @@ const Contact = () => {
                     <p>
                         I am interested in freelance opportunities - especially on ambitious
                         or large projects. However, if you have any other requests or
-                        questions, don't hesitate to contact me using below form either.
+                        questions, don't hesitate to contact me using the form below.
                     </p>
                     <EmailForm />
+                    {showSocialLinks && (
+                        <FadeInDiv>
+                            <SocialLink />
+                        </FadeInDiv>
+                    )}
                 </div>
                 <div id='infomap' className="info-map">
                     Sajal Satsangi,
@@ -55,7 +81,7 @@ const Contact = () => {
             </div>
             <Loader type='pacman' />
         </>
-    )
-}
+    );
+};
 
-export default Contact
+export default Contact;
