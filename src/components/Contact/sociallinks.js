@@ -11,105 +11,106 @@ import {
 
 const SocialLink = () => {
   return (
-    <div className="main-social">
+    <div id="mainsocial" className="mainsocialC">
       <br />
       <br />
-      <div className="tooltip-container">
-        <div className="tooltip">
-          <div className="profile">
-            <div className="user">
-              <div class="img">
+      <div className="tooltip-container-custom">
+        <div className="tooltip-custom">
+          <div className="profile-custom">
+            <div className="user-custom">
+              <div className="img-custom">
                 <img src={profile} />
               </div>
-              <div className="details">
-                <div className="name">LinkedIn</div>
-                <div className="username">Sajal Satsangi</div>
+              <div className="details-custom">
+                <div className="name-custom">LinkedIn</div>
+                <div className="username-custom">Sajal Satsangi</div>
               </div>
             </div>
-            <div className="about">@sajal-satsangi-547802204</div>
+            <div className="about-custom">@sajal-satsangi-547802204</div>
           </div>
         </div>
-        <div className="text">
-          <a className="icon" target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/sajal-satsangi-547802204/'>
-            <div className="layer">
+        <div className="text-custom">
+          <a className="icon-custom" target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/sajal-satsangi-547802204/'>
+            <div className="layer-custom">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
               <span className="fab fa-linkedin">
-                <FontAwesomeIcon icon={faLinkedin} size="lg" color="#fff" />
+                <FontAwesomeIcon className="icon-color-custom" icon={faLinkedin} size="lg" color="#fff" />
               </span>
             </div>
-            <div className="text">LinkedIn</div>
+            <div className="text-custom">LinkedIn</div>
           </a>
         </div>
       </div>
       <br />
       <br />
-      <div className="tooltip-container">
-        <div className="tooltip">
-          <div className="profile">
-            <div className="user">
-              <div class="img">
+      <div className="tooltip-container-custom">
+        <div className="tooltip-custom">
+          <div className="profile-custom">
+            <div className="user-custom">
+              <div className="img-custom">
                 <img src={profile} />
               </div>
-              <div className="details">
-                <div className="name">Github</div>
-                <div className="username">Sajal Satsangi</div>
+              <div className="details-custom">
+                <div className="name-custom">Github</div>
+                <div className="username-custom">Sajal Satsangi</div>
               </div>
             </div>
-            <div className="about">@SajalSatsangi</div>
+            <div className="about-custom">@SajalSatsangi</div>
           </div>
         </div>
-        <div className="text">
-          <a className="icon" target="_blank" rel='noreferrer' href="https://github.com/SajalSatsangi">
-            <div className="layer">
+        <div className="text-custom">
+          <a className="icon-custom" target="_blank" rel='noreferrer' href="https://github.com/SajalSatsangi">
+            <div className="layer-custom">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
               <span className="fab1 fa-linkedin">
-                <FontAwesomeIcon icon={faGithub} size="lg" color="#fff" />
+                <FontAwesomeIcon className="icon-color-custom" icon={faGithub} size="lg" color="#fff" />
               </span>
             </div>
-            <div className="text">Github</div>
+            <div className="text-custom">Github</div>
           </a>
         </div>
       </div>
       <br />
       <br />
-      <div className="tooltip-container">
-        <div className="tooltip">
-          <div className="profile">
-            <div className="user">
-              <div class="img">
+      <div className="tooltip-container-custom">
+        <div className="tooltip-custom">
+          <div className="profile-custom">
+            <div className="user-custom">
+              <div className="img-custom">
                 <img src={profile} />
               </div>
-              <div className="details">
-                <div className="name">Leetcode</div>
-                <div className="username">Sajal Satsangi</div>
+              <div className="details-custom">
+                <div className="name-custom">Leetcode</div>
+                <div className="username-custom">Sajal Satsangi</div>
               </div>
             </div>
-            <div className="about">@Sajal_Satsangi</div>
+            <div className="about-custom">@Sajal_Satsangi</div>
           </div>
         </div>
-        <div className="text">
-          <a className="icon" target="_blank" rel='noreferrer' href="https://leetcode.com/Sajal_Satsangi/">
-            <div className="layer">
+        <div className="text-custom">
+          <a className="icon-custom" target="_blank" rel='noreferrer' href="https://leetcode.com/Sajal_Satsangi/">
+            <div className="layer-custom">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
               <span className="fab1 fa-linkedin">
-                <img className="leetcode" src={Leetcode} alt="leetcode" />
+                <img className="leetcode RColor" src={Leetcode} alt="leetcode" />
               </span>
             </div>
-            <div className="text">Leetcode</div>
+            <div className="text-custom">Leetcode</div>
           </a>
         </div>
       </div>
     </div>
   );
+  
 };
 
 export default SocialLink;

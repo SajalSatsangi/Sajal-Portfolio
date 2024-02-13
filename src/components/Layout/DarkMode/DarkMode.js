@@ -16,6 +16,7 @@ const DarkMode = () => {
     const [hoverExpTheme, setHoverExpTheme] = useState("dark-hover-exp");
     const [textSphereTheme, setTextSphereTheme] = useState("text-sphere");
     const [mainSocialTheme, setMainSocialTheme] = useState("main-social-2-container");
+    const [mainsocialTheme, setMainsocialTheme] = useState("main-social");
 
     const toggleTheme = () => {
         const newTheme = theme === "light-theme" ? "dark-theme" : "light-theme";
@@ -31,6 +32,7 @@ const DarkMode = () => {
         setHoverExpTheme(newTheme === "light-theme" ? "light-hover-exp" : "dark-hover-exp");
         setTextSphereTheme(newTheme === "light-theme" ? "text-sphere-light" : "text-sphere");
         setMainSocialTheme(newTheme === "light-theme" ? "main-social-2-container-light" : "main-social-2-container");
+        setMainsocialTheme(newTheme === "light-theme" ? "mainsocialC-light" : "mainsocialC");
     };
 
     useLayoutEffect(() => {
@@ -54,8 +56,9 @@ const DarkMode = () => {
         setPageTheme("hover-exp", hoverExpTheme);
         setPageTheme("textSphere", textSphereTheme);
         setPageTheme("main-social", mainSocialTheme);
+        setPageTheme("mainsocial", mainsocialTheme);
 
-    }, [theme, pageTheme, sidebarTheme, aboutTheme, contactTheme, cubeTheme, iframeTheme, contactFormTheme, infoMapTheme, hoverExpTheme, textSphereTheme, mainSocialTheme]);
+    }, [theme, pageTheme, sidebarTheme, aboutTheme, contactTheme, cubeTheme, iframeTheme, contactFormTheme, infoMapTheme, hoverExpTheme, textSphereTheme, mainSocialTheme, mainsocialTheme]);
 
     return (
         <div className='light_mode'>

@@ -16,6 +16,217 @@ body {
   background: #212121;
   color: #fff;
 
+  .mainsocialC {
+    margin-top: -40px;
+    z-index: 99999;
+    display: flex;
+
+    .img-custom {
+        width: 55px;
+        height: 55px;
+        border: 1px solid #ff9100;
+        border-radius: 10px;
+        background: #fff;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .RColor {
+        -webkit-filter: invert(0%);
+        filter: invert(0%);
+    }
+
+    .leetcode {
+        width: 75%;
+        margin-top: 6px;
+    }
+
+    .tooltip-container-custom {
+        position: relative;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-size: 17px;
+        border-radius: 25px;
+        width: 35px;
+        margin-left: 20px;
+    }
+
+    .tooltip-custom {
+        margin-left: 40px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s;
+        border-radius: 15px;
+        box-shadow: inset 5px 5px 5px #ff9100,
+            inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+            5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .profile-custom {
+        background: #2a2b2f;
+        border-radius: 10px 15px;
+        padding: 10px;
+        border: 1px solid #ff9100;
+        width: max-content;
+        z-index: 99999;
+    }
+
+    .tooltip-container-custom:hover .tooltip-custom {
+        top: -150px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .icon-custom {
+        text-decoration: none;
+        color: #fff;
+
+        display: block;
+        position: sticky;
+    }
+
+    .layer-custom {
+        width: 55px;
+        height: 55px;
+        transition: transform 0.3s;
+    }
+
+    .icon-custom:hover .layer-custom {
+        transform: rotate(-35deg) skew(20deg);
+    }
+
+    .layer-custom span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 65%;
+        width: 35px;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        transition: all 0.3s;
+    }
+
+    .layer-custom span,
+    .text-custom {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    .icon-custom:hover.layer-custom span {
+        box-shadow: -1px 1px 3px #fff;
+    }
+
+    .icon-custom .text-custom {
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        opacity: 0;
+        font-weight: 500;
+        transform: translateX(-50%);
+        transition: bottom 0.3s ease, opacity 0.3s ease;
+    }
+
+    .icon-custom:hover .text-custom {
+        bottom: -20px;
+        opacity: 1;
+    }
+
+    .icon-custom:hover .layer-custom span:nth-child(1) {
+        opacity: 0.2;
+    }
+
+    .icon-custom:hover .layer-custom span:nth-child(2) {
+        opacity: 0.4;
+        transform: translate(5px, -5px);
+    }
+
+    .icon-custom:hover .layer-custom span:nth-child(3) {
+        opacity: 0.6;
+        transform: translate(10px, -10px);
+    }
+
+    .icon-custom:hover .layer-custom span:nth-child(4) {
+        opacity: 0.8;
+        transform: translate(15px, -15px);
+    }
+
+    .icon-custom:hover .layer-custom span:nth-child(5) {
+        opacity: 1;
+        transform: translate(20px, -20px);
+    }
+
+    .layer-custom span.fab {
+        font-size: 18px;
+        line-height: 40px;
+        text-align: center;
+        fill: #fff;
+        background: #212121;
+    }
+
+    .layer-custom span.fab1 {
+        font-size: 18px;
+        line-height: 40px;
+        text-align: center;
+        fill: #fff;
+        background: #212121;
+    }
+
+    .user-custom {
+        display: flex;
+        gap: 10px;
+    }
+
+    .name-custom {
+        font-size: 17px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .details-custom {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        color: #fff;
+    }
+
+    .about-custom {
+        color: #ccc;
+        padding-top: 5px;
+    }
+
+    .card00-custom {
+        width: 290px;
+        height: 352px;
+        background-image: linear-gradient(163deg, #506475 0%, #ff9100 100%);
+        border-radius: 20px;
+        transition: all .3s;
+    }
+
+    .card21-custom {
+        width: 290px;
+        height: 30px;
+        background-color: #000000;
+        border-radius: 20px;
+        transition: all .2s;
+    }
+
+    .card2-custom:hover {
+        transform: scale(0.98);
+        border-radius: 20px;
+    }
+
+    .card-custom:hover {
+        box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+    }
+}
 
   .main-social-2-container {
     position: absolute;
@@ -904,7 +1115,223 @@ body {
   background: #dfdddd;
   color: #000000 !important;
 
-  .main-social-2-container-light {
+  .mainsocialC {
+    margin-top: -40px;
+    z-index: 99999;
+    display: flex;
+
+    .img-custom {
+        width: 55px;
+        height: 55px;
+        border: 1px solid #ff9100;
+        border-radius: 10px;
+        background: #fff;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .icon-color-custom {
+        color: black !important;
+    }
+
+    .RColor {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+
+    .leetcode {
+        width: 75%;
+        margin-top: 6px;
+    }
+
+    .tooltip-container-custom {
+        position: relative;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-size: 17px;
+        border-radius: 25px;
+        width: 35px;
+        margin-left: 20px;
+    }
+
+    .tooltip-custom {
+        margin-left: 40px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s;
+        border-radius: 15px;
+        box-shadow: inset 5px 5px 5px #ff9100,
+            inset -5px -5px 15px rgb(193, 193, 193, 0.1),
+            5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .profile-custom {
+        background: rgb(163, 163, 163);
+        border-radius: 10px 15px;
+        padding: 10px;
+        border: 1px solid #ff9100;
+        width: max-content;
+        z-index: 99999;
+    }
+
+    .tooltip-container-custom:hover .tooltip-custom {
+        top: -150px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .icon-custom {
+        text-decoration: none;
+        color: #000;
+
+        display: block;
+        position: sticky;
+    }
+
+    .layer-custom {
+        width: 55px;
+        height: 55px;
+        transition: transform 0.3s;
+    }
+
+    .icon-custom:hover .layer-custom {
+        transform: rotate(-35deg) skew(20deg);
+    }
+
+    .layer-custom span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 65%;
+        width: 35px;
+        border: 1px solid #000;
+        border-radius: 50px;
+        transition: all 0.3s;
+    }
+
+    .layer-custom span,
+    .text-custom {
+        color: #000;
+        border-color: #000;
+    }
+
+    .icon-custom:hover.layer-custom span {
+        box-shadow: -1px 1px 3px #000;
+    }
+
+    .icon-custom .text-custom {
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        opacity: 0;
+        font-weight: 500;
+        transform: translateX(-50%);
+        transition: bottom 0.3s ease, opacity 0.3s ease;
+    }
+
+    .icon-custom:hover .text-custom {
+        bottom: -20px;
+        opacity: 1;
+    }
+
+    .icon-custom:hover .layer-custom span:nth-child(1) {
+        opacity: 0.2;
+    }
+
+    .icon-custom:hover .layer-custom span:nth-child(2) {
+        opacity: 0.4;
+        transform: translate(5px, -5px);
+    }
+
+    .icon-custom:hover .layer-custom span:nth-child(3) {
+        opacity: 0.6;
+        transform: translate(10px, -10px);
+    }
+
+    .icon-custom:hover .layer-custom span:nth-child(4) {
+        opacity: 0.8;
+        transform: translate(15px, -15px);
+    }
+
+    .icon-custom:hover .layer-custom span:nth-child(5) {
+        opacity: 1;
+        transform: translate(20px, -20px);
+    }
+
+    .layer-custom span.fab {
+        font-size: 18px;
+        line-height: 40px;
+        text-align: center;
+        fill: #000;
+        background: rgb(163, 163, 163);
+    }
+
+    .layer-custom span.fab1 {
+        font-size: 18px;
+        line-height: 40px;
+        text-align: center;
+        fill: #000;
+        background: rgb(163, 163, 163);
+    }
+
+    .user-custom {
+        display: flex;
+        gap: 10px;
+    }
+
+    .name-custom {
+        font-size: 17px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .details-custom {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        color: #000;
+    }
+
+    .about-custom {
+        color: #eee;
+        padding-top: 5px;
+    }
+
+    .card00-custom {
+        width: 290px;
+        height: 352px;
+        background-image: linear-gradient(163deg, #506475 0%, #ff9100 100%);
+        border-radius: 20px;
+        transition: all .3s;
+    }
+
+    .card21-custom {
+        width: 290px;
+        height: 30px;
+        background-color: #000000;
+        border-radius: 20px;
+        transition: all .2s;
+    }
+
+    .card2-custom:hover {
+        transform: scale(0.98);
+        border-radius: 20px;
+    }
+
+    .card-custom:hover {
+        box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+    }
+}
+
+  .main-social-2-container {
     position: absolute;
     display: flex;
     flex-direction: column;
