@@ -2,6 +2,7 @@ import React from "react";
 import Leetcode from '../../assets/images/leetcode 1.png'
 import "./index.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import profile from '../../assets/images/profile.jpg'
 import {
   faLinkedin,
   faGithub,
@@ -17,6 +18,9 @@ const SocialLink = () => {
         <div className="tooltip">
           <div className="profile">
             <div className="user">
+              <div class="img">
+                <img src={profile} />
+              </div>
               <div className="details">
                 <div className="name">LinkedIn</div>
                 <div className="username">Sajal Satsangi</div>
@@ -46,6 +50,9 @@ const SocialLink = () => {
         <div className="tooltip">
           <div className="profile">
             <div className="user">
+              <div class="img">
+                <img src={profile} />
+              </div>
               <div className="details">
                 <div className="name">Github</div>
                 <div className="username">Sajal Satsangi</div>
@@ -75,6 +82,9 @@ const SocialLink = () => {
         <div className="tooltip">
           <div className="profile">
             <div className="user">
+              <div class="img">
+                <img src={profile} />
+              </div>
               <div className="details">
                 <div className="name">Leetcode</div>
                 <div className="username">Sajal Satsangi</div>

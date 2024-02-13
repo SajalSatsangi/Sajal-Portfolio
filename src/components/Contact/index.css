@@ -1,9 +1,21 @@
-.leetcode{
+.img {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #ff9100;
+    border-radius: 10px;
+    background: #fff;
+
+    img {
+        width: 100%;
+    }
+}
+
+.leetcode {
     width: 75%;
     margin-top: 6px;
 }
 
-.main-social{
+.main-social {
     margin-top: -40px;
     z-index: 99999;
     display: flex;
