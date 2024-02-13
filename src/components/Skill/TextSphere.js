@@ -6,20 +6,27 @@ const TextShpere = () => {
   useEffect(() => {
     const container = ".tagcloud";
     const texts = [
+      "React-Native",
+      "React",
+      "Figma",
+      "JavaScript",
       "HTML",
       "CSS",
-      "SASS",
-      "JavaScript",
-      "React",
-      "Vue",
-      "Nuxt",
-      "NodeJS",
-      "Babel",
-      "Jquery",
-      "ES6",
-      "GIT",
-      "GITHUB",
-    ];
+      "C with DSA",
+      "C++ with STL",
+      "Python",
+      "Java",
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "Firebase",
+      "Git",
+      "Tailwind",
+      "Sass",
+      "Arduino IDE",
+      "WordPress",
+      "Wix",
+  ];  
 
     const options = {
       radius: 300,

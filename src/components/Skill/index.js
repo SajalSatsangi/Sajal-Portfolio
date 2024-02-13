@@ -3,6 +3,7 @@ import ParticlesBackground from "../Layout/ParticleBackground";
 import AnimatedLetters from '../AnimatedLetters';
 import TextShpere from "./TextSphere";
 import { useEffect, useState } from "react";
+import AllSkills from "./allSkills";
 
 const Skill = () => {
 
@@ -30,7 +31,7 @@ const Skill = () => {
         </h1>
       </div>
       <div className="skills">
-        hello
+        <AllSkills />
       </div>
       <TextShpere />
       <ParticlesBackground />

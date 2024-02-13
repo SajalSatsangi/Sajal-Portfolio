@@ -104,7 +104,7 @@ const SocialLink = () => {
                 <img className="leetcode" src={Leetcode} alt="leetcode" />
               </span>
             </div>
-            <div className="text">Telegram</div>
+            <div className="text">Leetcode</div>
           </a>
         </div>
       </div>
