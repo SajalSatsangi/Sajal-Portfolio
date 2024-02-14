@@ -7,6 +7,8 @@ import './index.css'
 import styled, { keyframes } from 'styled-components';
 import { fadeIn, fadeInUp, fadeInUpBig, rubberBand } from 'react-animations';
 import LogoImage from "../../assets/images/SajalResume.png";
+import {Link} from 'react-router-dom';
+import SajalResume from '../../assets/images/SajalResume.png';
 
 const bounceAnimation = keyframes`${fadeIn}`;
 
@@ -56,6 +58,17 @@ const Resume = () => {
             </div>
             {showTimeline && <BouncyDiv className="Resume-div">
                 <img className="resumeimg" src={LogoImage} alt="Logo" />
+            </BouncyDiv>}
+            {showTimeline && <BouncyDiv>
+            <Link
+                to={SajalResume}
+                download="SajalResume"
+                target="_blank"
+                rel="noreferrer"
+                className="DownloadButton"
+            >
+                Download file
+            </Link>
             </BouncyDiv>}
             <Loader type="pacman" />
         </>

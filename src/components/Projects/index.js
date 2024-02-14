@@ -58,9 +58,11 @@ const Projects = () => {
                             idx={15}
                         />
                     </h1>
-                    <p>
-                        I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.
-                    </p>
+                    {showTimeline && <BouncyDiv>
+                        <p>
+                            I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.
+                        </p>
+                    </BouncyDiv>}
                 </div>
             </div>
             {showTimeline && <BouncyDiv className="Project-div">
@@ -98,7 +100,7 @@ const Projects = () => {
                                 <ToggleButton id="tb5" className="Togglebutton" value="others" onClick={() => setToggle('others')}>OTHERS</ToggleButton>
                             }
                         </ToggleButtonGroup>
-                        <div  className="Project-div-2">
+                        <div className="Project-div-2">
                             <CardContainer>
                                 {toggle === 'all' && projects
                                     .map((project) => (
