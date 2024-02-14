@@ -69,27 +69,33 @@ const Projects = () => {
                     <Wrapper>
                         <ToggleButtonGroup >
                             {toggle === 'all' ?
-                                <ToggleButton className="Togglebutton2" active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
+                                <ToggleButton id="tb21" className="Togglebutton2" active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
                                 :
-                                <ToggleButton className="Togglebutton" value="all" onClick={() => setToggle('all')}>All</ToggleButton>
+                                <ToggleButton id="tb1" className="Togglebutton" value="all" onClick={() => setToggle('all')}>All</ToggleButton>
                             }
-                            <Divider className="Divider" />
+                            <Divider id="Divider1" className="Divider" />
                             {toggle === 'web app' ?
-                                <ToggleButton className="Togglebutton2" active value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
+                                <ToggleButton id="tb22" className="Togglebutton2" active value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
                                 :
-                                <ToggleButton className="Togglebutton" value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
+                                <ToggleButton id="tb2" className="Togglebutton" value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
                             }
-                            <Divider className="Divider" />
+                            <Divider id="Divider2" className="Divider" />
                             {toggle === 'android app' ?
-                                <ToggleButton className="Togglebutton2" active value="android app" onClick={() => setToggle('android app')}>ANDROID APP'S</ToggleButton>
+                                <ToggleButton id="tb23" className="Togglebutton2" active value="android app" onClick={() => setToggle('android app')}>ANDROID APP'S</ToggleButton>
                                 :
-                                <ToggleButton className="Togglebutton" value="android app" onClick={() => setToggle('android app')}>ANDROID APP'S</ToggleButton>
+                                <ToggleButton id="tb3" className="Togglebutton" value="android app" onClick={() => setToggle('android app')}>ANDROID APP'S</ToggleButton>
                             }
-                            <Divider className="Divider" />
-                            {toggle === 'machine learning' ?
-                                <ToggleButton className="Togglebutton2" active value="machine learning" onClick={() => setToggle('machine learning')}>MACHINE LEARNING</ToggleButton>
+                            <Divider id="Divider3" className="Divider" />
+                            {toggle === 'UI Designing' ?
+                                <ToggleButton id="tb24" className="Togglebutton2" active value="UI Designing" onClick={() => setToggle('UI Designing')}>UI DESIGNING</ToggleButton>
                                 :
-                                <ToggleButton className="Togglebutton" value="machine learning" onClick={() => setToggle('machine learning')}>MACHINE LEARNING</ToggleButton>
+                                <ToggleButton id="tb4" className="Togglebutton" value="UI Designing" onClick={() => setToggle('UI Designing')}>UI DESIGNING</ToggleButton>
+                            }
+                            <Divider id="Divider4" className="Divider" />
+                            {toggle === 'others' ?
+                                <ToggleButton id="tb25" className="Togglebutton2" active value="others" onClick={() => setToggle('others')}>OTHERS</ToggleButton>
+                                :
+                                <ToggleButton id="tb5" className="Togglebutton" value="others" onClick={() => setToggle('others')}>OTHERS</ToggleButton>
                             }
                         </ToggleButtonGroup>
                         <div  className="Project-div-2">

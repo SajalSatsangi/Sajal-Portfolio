@@ -100,7 +100,7 @@ export const projects = [
       image:
         "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
       tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-      category: "machine learning",
+      category: "UI Designing",
       github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
       webapp: "https://brain-tumor.netlify.app/",
       member: [
@@ -205,7 +205,7 @@ export const projects = [
       image:
         "https://dontrepeatyourself.org/media/face-recognition-with-python-dlib-and-deep-learning_cezKZBj.png",
       tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-      category: "machine learning",
+      category: "UI Designing",
       github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
       webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
     },

@@ -55,25 +55,25 @@ export const ToggleButtonGroup = styled.div`
     border: 1.5px solid ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.primary};
     font-size: 16px;
-    border-radius: 12px;
-    font-weight: 500;
-    margin: 22px 0px;
+    border-radius: 12px !important;
+    font-weight: 500 !important;
+    margin: 22px 0px !important;
     @media (max-width: 768px) {
         font-size: 12px;
     }
 `
 
 export const ToggleButton = styled.div`
-    padding: 8px 18px;
-    border-radius: 6px;
+    padding: 8px 18px !important;
+    border-radius: 6px !important;
     cursor: pointer;
     ${({ active, theme }) =>
         active && `
-    background: ${theme.primary + 20};
+
     `
     }
     &:hover {
-        background: ${({ theme }) => theme.primary + 8};
+        // background: ${({ theme }) => theme.primary + 8};
     }
     @media (max-width: 768px) {
         padding: 6px 8px;

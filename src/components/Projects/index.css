@@ -27,21 +27,31 @@
 }
 
 .Togglebutton {
+    padding: 8px 18px !important;
+    border-radius: 6px !important;
+
     &:hover {
         background: rgba(255, 255, 255, 0.118) !important;
     }
 }
 
 .Togglebutton2 {
+    padding: 8px 18px !important;
     background: rgba(255, 255, 255, 0.193) !important;
+    border-radius: 6px !important;
 }
 
 .TogglebuttonLight {
+    padding: 8px 18px !important;
+    border-radius: 6px !important;
+
     &:hover {
-        background: rgba(0, 0, 0, 0.118) !important;
+        background: rgba(0, 0, 0, 0.215) !important;
     }
 }
 
 .Togglebutton2Light {
-    background: rgba(0, 0, 0, 0.193) !important;
+    padding: 8px 18px !important;
+    background: rgba(0, 0, 0, 0.393) !important;
+    border-radius: 6px !important;
 }
