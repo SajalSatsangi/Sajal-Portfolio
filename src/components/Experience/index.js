@@ -64,26 +64,37 @@ const Experience = () => {
 
                             return (
                                 <VerticalTimelineElement
-                                    key={element.key}
+                                    key={element.id}
                                     date={element.date}
                                     dateClassName="date"
                                     iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
                                     icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
                                 >
-                                    <h3 className="vertical-timeline-element-title">
-                                        {element.title}
-                                    </h3>
-                                    <h5 className="vertical-timeline-element-subtitle">
-                                        {element.location}
-                                    </h5>
+                                    <div className="title-college">
+                                        {element.images && (
+                                            <div className="college-images">
+                                                {element.images.map((image, index) => (
+                                                    <img key={index} src={image} alt={`experience-img-${index}`} />
+                                                ))}
+                                            </div>
+                                        )}
+                                        <div>
+                                            <h3 className="vertical-timeline-element-title">
+                                                {element.title}
+                                            </h3>
+                                            <h5 className="vertical-timeline-element-subtitle">
+                                                {element.location}
+                                            </h5>
+                                        </div>
+                                    </div>
                                     <p id="description">{element.description}</p>
                                     {showButton && (
                                         <a
                                             className={`button ${isWorkIcon ? "workButton" : "schoolButton"
                                                 }`}
-                                                href={element.buttonLink}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
+                                            href={element.buttonLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                         >
                                             {element.buttonText}
                                         </a>

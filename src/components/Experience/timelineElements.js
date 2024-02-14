@@ -1,3 +1,17 @@
+import image1 from '../../assets/images/Dayalbagh_Educational_Institute_logo.jpg';
+import image2 from '../../assets/images/sih.png';
+import image3 from '../../assets/images/virtual.png';
+import image4 from '../../assets/images/HN.png';
+import image5 from '../../assets/images/voice.png';
+import image6 from '../../assets/images/EOL.png';
+import image7 from '../../assets/images/start-a-thon.png';
+import image8 from '../../assets/images/spacehack.png';
+import image9 from '../../assets/images/flipkart.png';
+import image10 from '../../assets/images/hackfest.png';
+import image11 from '../../assets/images/itday.png';
+import image12 from '../../assets/images/shriram.png';
+import image13 from '../../assets/images/harduaganj.png';
+
 let timelineElements = [
   {
     id: 15,
@@ -9,6 +23,7 @@ let timelineElements = [
     buttonLink: "https://github.com/virtual-labs/exp-projection-of-solids-dei",
     date: "September 2023 - December 2023",
     icon: "work",
+    images: [image3]
   },
   {
     id: 14,
@@ -20,28 +35,31 @@ let timelineElements = [
     buttonLink: "https://drive.google.com/file/d/1cWaWBe4tkANxVGMCqmCOcdbNX1tvDRyW/view?usp=drive_link",
     date: "2023",
     icon: "school",
+    images: [image2]
   },
   {
     id: 13,
     title: "Intern - Hankernest Technologies Private Limited",
     location: "Agra, India",
     description:
-    "Contribute to the develoopment of a low-cost hydroponic vertical farming system and software as part of a team I as a Frontend developer worked on the Frontened part of our project designing the website for our project.",
+      "Contribute to the develoopment of a low-cost hydroponic vertical farming system and software as part of a team I as a Frontend developer worked on the Frontened part of our project designing the website for our project.",
     buttonText: "Internship Certificate",
     buttonLink: "https://drive.google.com/file/d/12oLsdyNvh5Rp9r8olD4iT_YLJnHIUoR3/view?usp=drivesdk",
     date: "May 2023 - June 2023",
     icon: "work",
+    images: [image4]
   },
   {
     id: 12,
     title: "Intern - DSRPF",
     location: "DEI, Agra, India",
     description:
-    "Contribute to the develoopment of a low-cost hydroponic vertical farming system and software as part of a team I as a Frontend developer worked on the Frontened part of our project designing the website for our project.",
+      "Contribute to the develoopment of a low-cost hydroponic vertical farming system and software as part of a team I as a Frontend developer worked on the Frontened part of our project designing the website for our project.",
     // buttonText: "Internship Certificate",
     // buttonLink: "https://example.com/project",
     date: "May 2023 - June 2023",
     icon: "work",
+    images: [image1]
   },
   {
     id: 11,
@@ -53,6 +71,7 @@ let timelineElements = [
     buttonLink: "https://drive.google.com/file/d/12b0pxbddn6LcKcPmEe7xe_k19RUl0OsW/view?usp=drivesdk",
     date: "May 2023 - June 2023",
     icon: "work",
+    images: [image6]
   },
   {
     id: 10,
@@ -64,6 +83,7 @@ let timelineElements = [
     // buttonLink: "https://example.com/project",
     date: "August 2023",
     icon: "school",
+    images: [image7]
   },
   {
     id: 9,
@@ -75,6 +95,7 @@ let timelineElements = [
     // buttonLink: "https://example.com/project",
     date: "August 2023",
     icon: "school",
+    images: [image8]
   },
   {
     id: 8,
@@ -86,6 +107,7 @@ let timelineElements = [
     // buttonLink: "https://example.com/project",
     date: "July 2023",
     icon: "school",
+    images: [image9]
   },
   {
     id: 7,
@@ -97,6 +119,7 @@ let timelineElements = [
     buttonLink: "https://drive.google.com/file/d/107XAsREPUNjXxEomYdGKkP3YaKv-ij35/view",
     date: "April 2023",
     icon: "school",
+    images: [image10]
   },
   {
     id: 6,
@@ -108,6 +131,7 @@ let timelineElements = [
     // buttonLink: "https://drive.google.com/file/d/107XAsREPUNjXxEomYdGKkP3YaKv-ij35/view",
     date: "March 2023",
     icon: "school",
+    images: [image13]
   },
   {
     id: 5,
@@ -119,6 +143,7 @@ let timelineElements = [
     buttonText: "View Certificate",
     date: "March 2023",
     icon: "school",
+    images: [image11]
   },
   {
     id: 4,
@@ -130,6 +155,7 @@ let timelineElements = [
     // buttonText: "View Certificate",
     date: "March 2023",
     icon: "school",
+    images: [image12]
   },
   {
     id: 3,
@@ -141,6 +167,8 @@ let timelineElements = [
     // buttonLink: "https://example.com/project",
     date: "March 2023",
     icon: "school",
+    images: [image5]
+
   },
   {
     id: 2,
@@ -152,6 +180,7 @@ let timelineElements = [
     // buttonLink: "https://example.com/project",
     date: "October 2022",
     icon: "work",
+    images: [image4]
   },
   {
     id: 1,
@@ -163,6 +192,7 @@ let timelineElements = [
     buttonLink: "https://drive.google.com/file/d/1tBS9JhKh6vi3bbDD-Eg8tXSTnv8q6R_X/view",
     date: "June 2022",
     icon: "work",
+    images: [image4]
   },
   {
     id: 0,
@@ -174,6 +204,7 @@ let timelineElements = [
     buttonLink: "https://drive.google.com/file/d/1Cm4PQFzysXjIoYnYH5FblDJ9_F6rzlFT/view?usp=drive_link",
     date: "2021",
     icon: "school",
+    images: [image2]
   },
 ];
 

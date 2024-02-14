@@ -10,6 +10,21 @@ h5{
     font-size: larger !important;
 }
 
+.title-college {
+    display: flex;
+    align-items: center;
+}
+
+.college-images {
+    width: 80px;
+    margin-right: 15px;
+    margin-top: 8px;
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
 .light-hover-exp {
     h1 {
         text-align: center;
