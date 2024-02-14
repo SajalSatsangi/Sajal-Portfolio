@@ -39,15 +39,17 @@ const Projects = () => {
 
     return (
         <>
-            <ParticlesBackground />
-            <div className="text-zone dark-hover-exp">
-                <h1 className="title">
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
-                        idx={15}
-                    />
-                </h1>
+            <div className="exp-page" >
+                <ParticlesBackground />
+                <div className="text-zone dark-hover-exp">
+                    <h1 className="title h12">
+                        <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
+                            idx={15}
+                        />
+                    </h1>
+                </div>
             </div>
             {showTimeline && <BouncyDiv className="Resume-div">
                 {/* <img className="resumeimg" src={LogoImage} alt="Logo" /> */}

@@ -42,15 +42,17 @@ const Education = () => {
 
     return (
         <>
-            <ParticlesBackground />
-            <div className="text-zone dark-hover-exp">
-                <h1 className="title">
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={['E', 'd', 'u', 'c', 'a', 't', 'i', 'o', 'n']}
-                        idx={15}
-                    />
-                </h1>
+            <div className="exp-page" >
+                <ParticlesBackground />
+                <div className="text-zone dark-hover-exp">
+                    <h1 className="title h13">
+                        <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={['E', 'd', 'u', 'c', 'a', 't', 'i', 'o', 'n']}
+                            idx={15}
+                        />
+                    </h1>
+                </div>
             </div>
             <div id="hover-exp" className="dark-hover-exp" style={{ height: '69%', overflow: 'auto', marginTop: '-15px', marginLeft: '100px' }}>
                 {showTimeline && (

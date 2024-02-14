@@ -42,15 +42,17 @@ const Resume = () => {
 
     return (
         <>
-            <ParticlesBackground />
-            <div className="text-zone dark-hover-exp">
-                <h1 className="title">
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={['R', 'e', 's', 'u', 'm', 'e']}
-                        idx={15}
-                    />
-                </h1>
+            <div className="exp-page" >
+                <ParticlesBackground />
+                <div className="text-zone dark-hover-exp">
+                    <h1 className="title h12">
+                        <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={['R', 'e', 's', 'u', 'm', 'e']}
+                            idx={15}
+                        />
+                    </h1>
+                </div>
             </div>
             {showTimeline && <BouncyDiv className="Resume-div">
                 <img className="resumeimg" src={LogoImage} alt="Logo" />

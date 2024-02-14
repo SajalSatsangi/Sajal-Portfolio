@@ -28,21 +28,23 @@ const Skill = () => {
 
   return (
     <>
-      <div className="text-zone dark-hover-exp">
-        <h1 className="title">
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={['S', 'k', 'i', 'l', 'l', 's']}
-            idx={15}
-          />
-        </h1>
+      <div className="exp-page" >
+        <ParticlesBackground />
+        <div className="text-zone dark-hover-exp">
+          <h1 className="title h11">
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={['S', 'k', 'i', 'l', 'l', 's']}
+              idx={15}
+            />
+          </h1>
+        </div>
       </div>
       <FadeDiv>
         <div className="skills">
           <AllSkills />
         </div>
         <TextSphere />
-        <ParticlesBackground />
       </FadeDiv>
       <Loader type="pacman" />
     </>

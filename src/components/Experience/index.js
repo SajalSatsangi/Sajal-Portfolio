@@ -5,6 +5,7 @@ import timelineElements from "./timelineElements.js";
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.css';
+import './index.scss';
 import ParticlesBackground from "../Layout/ParticleBackground";
 import {
     VerticalTimeline,
@@ -42,15 +43,17 @@ const Experience = () => {
 
     return (
         <>
-            <ParticlesBackground />
-            <div className="text-zone dark-hover-exp">
-                <h1 className="title">
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={['E', 'x', 'p', 'e', 'r', 'i', 'e', 'n', 'c', 'e', 's']}
-                        idx={15}
-                    />
-                </h1>
+            <div className="exp-page">
+                <ParticlesBackground />
+                <div className="text-zone dark-hover-exp">
+                    <h1 className="title h1">
+                        <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={['E', 'x', 'p', 'e', 'r', 'i', 'e', 'n', 'c', 'e', 's']}
+                            idx={15}
+                        />
+                    </h1>
+                </div>
             </div>
             <div id="hover-exp" className="dark-hover-exp" style={{ height: '69%', overflow: 'auto', marginTop: '-15px', marginLeft: '100px' }}>
                 {showTimeline && (
