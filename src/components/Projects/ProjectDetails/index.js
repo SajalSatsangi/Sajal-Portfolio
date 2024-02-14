@@ -100,7 +100,8 @@ const Tag = styled.div`
     color: ${({ theme }) => theme.primary};
     margin: 4px;
     padding: 4px 8px;
-    border-radius: 8px;
+    border: 2px solid white;
+    border-radius: 10px;
     background-color: ${({ theme }) => theme.primary + 20};
     @media only screen and (max-width: 600px) {
         font-size: 12px;
@@ -168,7 +169,7 @@ const Button = styled.a`
         background-color: ${theme.bgLight};
         color: ${theme.text_secondary};
         &:hover {
-            background-color: ${({ theme }) => theme.bg + 99};
+            opacity: 0.5;
         }
     `}
     cursor: pointer;
@@ -228,7 +229,7 @@ const index = ({ openModal, setOpenModal }) => {
                     )}
                     <ButtonGroup>
                         <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
+                        <Button dull href={project?.webapp} target='new'>View Live App</Button>
                     </ButtonGroup>
                 </Wrapper>
             </Container>
