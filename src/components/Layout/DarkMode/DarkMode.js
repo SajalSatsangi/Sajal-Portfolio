@@ -16,6 +16,7 @@ const DarkMode = () => {
     const [hoverExpTheme, setHoverExpTheme] = useState("dark-hover-exp");
     const [textSphereTheme, setTextSphereTheme] = useState("text-sphere");
     const [mainSocialTheme, setMainSocialTheme] = useState("main-social-2-container");
+    const [mainsocialThemeC, setMainsocialCTheme] = useState("mainsocial");
     const [mainsocialTheme, setMainsocialTheme] = useState("mainsocial");
     const [dividerTheme, setDividerTheme] = useState("Divider");
     const [togglebuttonTheme, setTogglebuttonTheme] = useState("Togglebutton");
@@ -35,6 +36,7 @@ const DarkMode = () => {
         setHoverExpTheme(newTheme === "light-theme" ? "light-hover-exp" : "dark-hover-exp");
         setTextSphereTheme(newTheme === "light-theme" ? "text-sphere-light" : "text-sphere");
         setMainSocialTheme(newTheme === "light-theme" ? "main-social-2-container-light" : "main-social-2-container");
+        setMainsocialCTheme(newTheme === "light-theme" ? "mainsocialC-light" : "mainsocialC");
         setMainsocialTheme(newTheme === "light-theme" ? "mainsocial-light" : "mainsocial");
         setDividerTheme(newTheme === "light-theme" ? "Divider-light" : "Divider");
         setTogglebuttonTheme(newTheme === "light-theme" ? "TogglebuttonLight" : "Togglebutton");
@@ -63,6 +65,7 @@ const DarkMode = () => {
         setPageTheme("textSphere", textSphereTheme);
         setPageTheme("main-social", mainSocialTheme);
         setPageTheme("mainsocial", mainsocialTheme);
+        setPageTheme("mainsocialC", mainsocialThemeC);
         setPageTheme("Divider1", dividerTheme);
         setPageTheme("Divider2", dividerTheme);
         setPageTheme("Divider3", dividerTheme);
@@ -78,7 +81,7 @@ const DarkMode = () => {
         setPageTheme("tb24", togglebutton2Theme);
         setPageTheme("tb25", togglebutton2Theme);
 
-    }, [theme, pageTheme, sidebarTheme, aboutTheme, contactTheme, cubeTheme, iframeTheme, contactFormTheme, infoMapTheme, hoverExpTheme, textSphereTheme, mainSocialTheme, mainsocialTheme, dividerTheme, togglebuttonTheme, togglebutton2Theme]);
+    }, [theme, pageTheme, sidebarTheme, aboutTheme, contactTheme, cubeTheme, iframeTheme, contactFormTheme, infoMapTheme, hoverExpTheme, textSphereTheme, mainSocialTheme, mainsocialThemeC, mainsocialTheme, dividerTheme, togglebuttonTheme, togglebutton2Theme]);
 
     return (
         <div className='light_mode'>

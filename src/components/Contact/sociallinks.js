@@ -6,12 +6,11 @@ import profile from '../../assets/images/profile.jpg'
 import {
   faLinkedin,
   faGithub,
-  // Add more icons as needed
 } from '@fortawesome/free-brands-svg-icons';
 
 const SocialLink = () => {
   return (
-    <div id="mainsocial" className="mainsocialC">
+    <div id="mainsocialC" className="mainsocialC">
       <br />
       <br />
       <div className="tooltip-container-custom">
