@@ -1,4 +1,5 @@
 {
+  "homepage": "https://SajalSatsangi.github.io/Sajal-Portfolio",
   "name": "sajal-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -24,6 +25,7 @@
     "animate.css": "^4.1.1",
     "emailjs": "^4.0.3",
     "framer-motion": "^11.0.3",
+    "gh-pages": "^6.1.1",
     "gsap-trial": "^3.12.5",
     "loaders.css": "^0.1.2",
     "pspdfkit": "^2024.1.2",
@@ -48,6 +50,8 @@
     "zero-styled": "^0.2.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
