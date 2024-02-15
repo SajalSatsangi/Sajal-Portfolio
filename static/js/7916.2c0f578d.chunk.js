@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksajal_portfolio=self.webpackChunksajal_portfolio||[]).push([[7916],{7916:(a,e,s)=>{s.d(e,{LineDrawer:()=>n});class n{async draw(a){const{drawLine:e}=await s.e(8664).then(s.bind(s,8664));e(a)}getSidesCount(){return 1}}}}]);
+//# sourceMappingURL=7916.2c0f578d.chunk.js.map
