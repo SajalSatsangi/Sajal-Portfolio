@@ -1,9 +1,11 @@
 import './index.scss'
+import './index.css'
+import sajal from '../../assets/images/profile.jpg'
 import LogoTitle from '../../assets/images/logo-s.png'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
-import Logo from './Logo'
+import ParticlesBackground from '../Layout/ParticleBackground'
 import Hello from '../../assets/Hello.gif'
 
 const Home = () => {
@@ -17,7 +19,7 @@ const Home = () => {
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             setLetterClass('text-animate-hover');
-        },8000);
+        }, 8000);
         return () => {
             clearTimeout(timeoutId);
         };
@@ -26,6 +28,15 @@ const Home = () => {
 
     return (
         <div id='homePage' className='container home-page-dark'>
+            <section id='section' className='section'>
+                <div className="logo-container">
+                    <div className='content'>
+                        <img src={sajal} />
+                        <h2>Android Developer<br /><span>UX/UI Designer</span></h2>
+                        <Link to='/contact' className='a'>contact me</Link>
+                    </div>
+                </div>
+            </section>
             <div className='text-zone'>
                 <h1>
                     <span className={letterClass}>H</span>
@@ -58,7 +69,8 @@ const Home = () => {
                 <h2>Frontened Developer/ UI Designer/ React-Native Developer</h2>
                 <Link to='/contact' className='flat-button'>CONTACT ME</Link>
             </div>
-            <Logo />
+            <ParticlesBackground />
+
         </div>
     )
 }

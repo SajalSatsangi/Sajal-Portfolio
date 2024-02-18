@@ -1,8 +1,8 @@
 export const projects = [
     {
       id: 11,
-      title: "DecisionHub",
-      date: "Jan 2024 - Dec 2023",
+      title: "DEI,FOE",
+      date: "Jan 2024 - Feb 2024",
       description:
         "A Rule Builder application “Decision Hub” that empowers Business Analysts to create, save, and visualize decision strategies. Provide a no-code rule writing experience and visual representation to test these rules in real-time and observe the calculations at each step.",
       image:

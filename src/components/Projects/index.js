@@ -48,8 +48,8 @@ const Projects = () => {
 
     return (
         <>
+            <ParticlesBackground />
             <div className="exp-page" >
-                <ParticlesBackground />
                 <div className="text-zone dark-hover-exp">
                     <h1 className="title h12">
                         <AnimatedLetters
