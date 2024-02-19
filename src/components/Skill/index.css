@@ -230,6 +230,25 @@
 
 }
 
+.wholeSkills{
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 590px;
+    margin-top: -20px;
+}
+
+.wholeSkills::-webkit-scrollbar{
+    opacity: 0;
+}
+
+.stats{
+    margin-left: 34vw;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
 .main-social-2-container {
     position: absolute;
     display: flex;

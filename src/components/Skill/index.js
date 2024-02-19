@@ -40,12 +40,23 @@ const Skill = () => {
           </h1>
         </div>
       </div>
-      <FadeDiv>
-        <div className="skills">
-          <AllSkills />
-        </div>
-        <TextSphere />
-      </FadeDiv>
+      <div className="wholeSkills">
+        <FadeDiv>
+          <div className="skills">
+            <AllSkills />
+          </div>
+          <TextSphere />
+          <div className="stats">
+            <img src="https://github-readme-stats.vercel.app/api?username=sajalsatsangi&show_icons=true&locale=en&theme=dark" alt="sajalsatsangi" />
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=sajalsatsangi&theme=dark" alt="sajalsatsangi" />
+            <img
+              src="https://github-readme-stats.vercel.app/api/top-langs?username=sajalsatsangi&show_icons=true&locale=en&layout=compact&theme=dark"
+              alt="GitHub Lang Stats"
+            />
+            <img src="https://leetcard.jacoblin.cool/Sajal_Satsangi?ext=heatmap" alt="LeetCode Stat" />
+          </div>
+        </FadeDiv>
+      </div>
       <Loader type="pacman" />
     </>
   );

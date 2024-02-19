@@ -42,5 +42,6 @@
 }
 
 .skills {
+    position: relative;
     margin-left: 16vw;
 }
