@@ -107,9 +107,14 @@ const Projects = () => {
                                         <ProjectCards project={project} openModal={openModal} setOpenModal={setOpenModal} />
                                     ))}
                                 {projects
-                                    .filter((item) => item.category == toggle)
+                                    .filter((item) => item.category?.includes(toggle))
                                     .map((project) => (
-                                        <ProjectCards project={project} openModal={openModal} setOpenModal={setOpenModal} />
+                                        <ProjectCards
+                                            key={project.id}
+                                            project={project}
+                                            openModal={openModal}
+                                            setOpenModal={setOpenModal}
+                                        />
                                     ))}
                             </CardContainer>
                         </div>
