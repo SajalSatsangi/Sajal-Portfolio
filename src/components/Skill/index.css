@@ -235,7 +235,8 @@
     overflow-y: auto;
     overflow-x: hidden;
     height: 590px;
-    margin-top: -20px;
+    margin-top: -90px;
+    padding-top: 100px;
 }
 
 .wholeSkills::-webkit-scrollbar{
